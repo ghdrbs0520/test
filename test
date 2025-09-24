@@ -1,4 +1,5 @@
 
+# 아이템 인식? 
 command /commandname <arguments>: #Arguments are explained below
     description: A description of what this command does
     usage: How to use the command, e.g. /commandname <arguments>    #If omitted this defaults to something similar to how the command was defined above.
@@ -9,6 +10,7 @@ command /commandname <arguments>: #Arguments are explained below
     trigger:
         # put conditions and effects here that will be checked/executed when the command is used.
 
+# 유료 힐러 NPC
 command /healer:
 permission: healer.create
 description: spawns a healer villager which can heal players
@@ -23,3 +25,21 @@ on rightclick on a priest:
     player's health is below 10
     heal the player by 5 hearts
     remove 1 gold ingot from the player
+
+# 전 플레이어 아이템지급
+command /전체지급:
+	trigger:
+		if player is op:
+			set {_item} to player's tool
+			if type of {_item} is not air:
+				loop all players:
+					set {_giver} to "%player%"
+					if loop-player is not "%{_giver}%":
+						give {_item} to loop-players
+						message "{@ag} &b 모든 플레이어에게 &6'&f%{_item}%&6' &b을 지급했습니다." to player
+						stop
+			else:
+				message "{@ag} &c모든 플레이어에게 지급할 아이템을 손에 들어주세요." to player
+		
+		else:
+			message "{@ag} &c당신은 이 명령어를 사용할 권한이 없습니다." to player
