@@ -1,1 +1,10 @@
 
+command /commandname <arguments>: #Arguments are explained below
+    description: A description of what this command does
+    usage: How to use the command, e.g. /commandname <arguments>    #If omitted this defaults to something similar to how the command was defined above.
+    permission: required.permission.to.use.this.command  #If omitted this command can be used by everyone regardless of permissions.
+    permission message"sk-var">: Message to send if the player doesn't have the required permission to use this command    "sk-comment">#If omitted this defaults to "You don't have the required permission to use this command"
+    executable by: players/console/players and console    #If omitted this command can be executed by players and the console.
+    aliases: /c, /comname.    #A list of aliases of the command which are usually abbreviations of the command
+    trigger:
+        # put conditions and effects here that will be checked/executed when the command is used.
