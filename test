@@ -8,3 +8,18 @@ command /commandname <arguments>: #Arguments are explained below
     aliases: /c, /comname.    #A list of aliases of the command which are usually abbreviations of the command
     trigger:
         # put conditions and effects here that will be checked/executed when the command is used.
+
+command /healer:
+permission: healer.create
+description: spawns a healer villager which can heal players
+trigger:
+    spawn a priest
+    set {%spawned villager%.healer} to true
+
+on rightclick on a priest:
+    player has permission "healer.use"
+    player is holding a gold ingot
+    {%clicked villager%.healer} is true
+    player's health is below 10
+    heal the player by 5 hearts
+    remove 1 gold ingot from the player
