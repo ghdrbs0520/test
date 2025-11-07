@@ -32,10 +32,37 @@
 
 
 1. 스킬 제작 (아이템 우클릭시)
-2. 소환물 제작 
-3. 몬스터 제작
+2. 소환물 제작 (사이트 활용, 테스트해야함 지금 ㄴㄴ)
+3. 몬스터 제작 (스탯만?)
 
-- 
+
+1. 낙뢰?
+설명 : 스킬 시전시 즉시 주변 반경의 모든 적에게 번개를 내리치며 데미지를 준다 또한 피격된 대상은 3초간 경직되어 이동 및 공격이 불가능하다
+/trigger skill_1p # 스킬시전
+/execute as @e[scores={skill1=1}] # 함수 발동
+# 트리거 활성화 및 스킬 상태 확인후 발동 (생략)
+execute at @s as @e[tag=monster] run tag @s (대충 태그 지정)
+execute at @e[tag=(지정된 태그)] run summon lightning_bolt
+execute as @e[tag=(지정된 태그)] run effect slow 111 111 false # 구속
+execute as @e[tag=(지정된 태그)] run effect jump 111 111 false # 점프강화 (오버플로우)
+execute as @e[tag=(지정된 태그)] run effect
+
+2.
+설명 :
+
+
+3.
+설명 :
+
+4.
+설명 :
+
+5.
+설명 :
+
+
+
+
 
 
 
