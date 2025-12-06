@@ -138,11 +138,13 @@ execute as @e[tag=(지정된 태그)] run effect
 
 
 
+유니티 에셋 
 
+pgg
+1. 맵 자동 생성 에셋
 
-
-
-
+hot reload
+2. 구문 실시간 반영 에셋
 
 
 
