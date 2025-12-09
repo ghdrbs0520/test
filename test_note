@@ -94,29 +94,54 @@ over
 /trigger skill_1p # 스킬시전
 /execute as @e[scores={skill1=1}] # 함수 발동
 # 트리거 활성화 및 스킬 상태 확인후 발동 (생략)
-execute at @s as @e[tag=monster] run tag @s (대충 태그 지정)
+execute at @s as @e[tag=monster] run tag add @s (대충 태그 지정)
 execute at @e[tag=(지정된 태그)] run summon lightning_bolt
-execute as @e[tag=(지정된 태그)] run effect slow 111 111 false # 구속
-execute as @e[tag=(지정된 태그)] run effect jump 111 111 false # 점프강화 (오버플로우)
+execute as @e[tag=(지정된 태그)] run effect @s slow 111 111 false # 구속
+execute as @e[tag=(지정된 태그)] run effect @s jump 111 111 false # 점프강화 (오버플로우)
 execute as @e[tag=(지정된 태그)] run effect
 
 2. 빙결
 설명 : 바라보는 방향으로 냉기를 분사하여 피격된 대상을 빙결시킨다 빙결된 대상은 최초 1회의 한해서 이동이 무효화되고 대상이 빙결 상태에서 이동시 동상스택이 점차 쌓이며 스택수에 비례해서 속도감소와 이동시 지속대미지를 받는다
-/execute
+/execute as @s at @s facing entity @s run summn ^ ^ ^ # 대충 파티클 소환
+/execute at @s as @e[distance=1..] run tag add @s 지정된태그
+/execute at @s as @e[distance=1..] run tag add @s 지정된태그 # 스턴용 태그
+/execute at @s as @e[tag=(지정된 태그)] run effect @s slow 111 111 false # 구속 (레벨 낮음)
+/execute at @s as @e[tag=(지정된 태그)] run effect @s jump 111 111 false # 점프강화 (오버플로우)
+# 반복커맨드
+1) 따로 함수로 한번에 적용 
+/execute as @e[tag=(지정된 태그),score={지정된 스코어=1..}] if entity # 대충 이동스코어 있으면 구속 만땅
+/execute as @e[tag=(지정된 태그),score={지정된 스코어=1..}] if entity # 스코어 초기화
+2) 추가 함수
+/execute as @e[tag=(지정된 태그)] if entity # 대충 이동스코어 있으면 스택 추가
+/execute as @e[tag=(지정된 태그)] if entity # 이동스코어 초기화
+/execute as @e[tag=(지정된 태그)] if entity # 대충 이동스코어 있으면 데미지
 
 
 3. 영혼 수확
 설명 : 주변의 광범위한 반경내에 모든 적의 영혼을 일부분 소환한다 가까이가면 영혼이 따라오며 접촉시 영혼을 흡수할수있다 일정 시간이 지난 영혼을 사라지며 남아있는 흡수된 영혼의 갯수만큼 추가 데미지 및 쿨타임감소가 부여된다
 /execute
 
-4. 강화 # 추가피해면 설정이 간단함(단 수치가 구려짐), 딜량상승은 구현 힘듦
+4. 강화 
 설명 : 자신의 신체를 강화하여 일정량의 강화스택을 획득한다 공격시 스택이 소모되며 피격 대상에게 (추가피해 또는 딜량증가)를 부여한다 스택은 스킬 사용시 제한없이 누적되며 누적스택이 특정 스택이상이면 스택 소모량이 증가하며 효과가 강화된다 또한 해당 스택은 다른 플레이어한테 양도가 가능하다 단 스킬을 보유중이여야한다
 (스택 양도시 대상에게 고유 인자를 부여하며 스택을 양도한 플레이어가 두명 이상일 경우 스택 양도시 스택이 합산이 아닌 곱하기로 양도된다 EX: 기존 스택 30, 양도된 스택 50, 스택 총합 1500)
-/execute
+1) 우클릭시 스택 적용
+/execute as @a[score={2323=2323}] ## 대충 우클릭 인식시 초기화후 다음 구문 실행
+/execute as @s run scoreboard players set @s 변수값 10
+2) 타격시 실행
+/
 
-5. 자폭
-설명 : 자신의 모든 스킬의 스택 및 버프를 제거하고 모든 스킬에 쿨타임을 300초로 설정하며 삭제된 버프와 스택의 갯수와 수치에 비례한 계수로 주변 모든 적에게 강력한 데미지를 넣는다 또한 30초간 무적상태가되며 체력이 1이된다.
+# 초기화
+/execute as @e[tag=m]
+/execute as @s run scoreboard players set @s 변수값 0
 
+
+5.
+
+6.
+
+7.
+
+8.
 
 
 
@@ -145,14 +170,6 @@ pgg
 
 hot reload
 2. 구문 실시간 반영 에셋
-
-
-
-
-
-
-
-
 
 
 
