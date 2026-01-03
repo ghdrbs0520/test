@@ -43,3 +43,25 @@ command /전체지급:
 		
 		else:
 			message "{@ag} &c당신은 이 명령어를 사용할 권한이 없습니다." to player
+
+
+
+
+
+
+
+
+
+-Dlog4j2.formatMsgNoLookups=true
+
+
+
+
+
+
+
+
+
+
+
+
