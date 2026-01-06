@@ -43,5 +43,119 @@ execute as @a at @s anchored eyes positioned ^ ^ ^1.0 if entity @e[type=armor_st
 
 
 
+[바닐라기준]
+
+1. 커스텀 npc
+1) 이름
+2) 무적
+3) 
+
+엔티티 생성(데이터 부여) > 인터렉션 생성 > 데이터 저장 > 상호작용 > 명령어 실행 > 데이터 기반 실행
+
+
+
+
+
+
+2. 스킬
+
+
+3. 대상 특정
+
+
+4. 퀘스트
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. 아이템 생성
+1) 종류
+2) 모델
+3) 이름
+4) 내용
+5) 데미지
+6) 장착 부위
+7) 추가속성
+
+# 기본형
+/function set:item_test 
+   {
+   ,data:""
+   ,model:""
+   ,name:""
+   ,lore:""
+   ,damage:""
+   ,equip:""
+   ,a:""
+}
+
+
+$give @s $(data)[item_model="$(model)",item_name={$(name)},lore=[{$(lore)}],attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:$(damage),operation:"add_value"}],equippable={slot:"$(equip)"}$(a)]
+
+$give 
+@s 
+$(data)[
+item_model="$(model)",
+item_name={$(name)},
+lore=[{$(lore)}],
+attribute_modifiers=[
+   {id:"attack_damage",
+   type:"attack_damage",
+   amount:$(damage),
+   operation:"add_value"}
+],
+equippable={slot:"$(equip)"}
+$(a)]
+
+
+
+
+
+
+
+점수 계산 방식
+
+1. 모두 비교 (개손해)
+2. 더하기 빼기 (번거로움)
+3. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
