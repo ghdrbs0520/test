@@ -52,7 +52,33 @@ execute as @a at @s anchored eyes positioned ^ ^ ^1.0 if entity @e[type=armor_st
 
 엔티티 생성(데이터 부여) > 인터렉션 생성 > 데이터 저장 > 상호작용 > 명령어 실행 > 데이터 기반 실행
 
+/function test:summon_npc {tag:"",name:"",data:""}
 
+$summon ~ ~ ~ interaction {Tags:["$(tag)"],}
+$summon ~ ~ ~ manequin {Tags:["$(tag)_dummy",],Custom_Name:["$(name)"],profile:["$(data)"]}
+
+
+data get <block|entity|storage> <대상> [대상 NBT경로] [규모]
+대상 NBT 데이터의 값을 [규모]만큼 곱해서 불러온다.
+data merge <block|entity|storage> <대상> <새 NBT경로>
+대상에 새 NBT 데이터를 병합한다.
+data remove <block|entity|storage> <대상> <대상 NBT경로>
+대상 NBT 데이터를 삭제한다. 플레이어의 NBT 데이터는 삭제할 수 없다.
+
+
+data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> from <block|entity|storage> <새 블록 좌표|새 개체|새 스토리지> [새 NBT경로]
+- 대상의 데이터를 다른 대상의 데이터 값을 가져와서 수정
+data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> string <block|entity|storage> <새 블록 좌표|새 개체|새 스토리지> [새 NBT경로] [start] [end] # [start]이상 [end]미만
+- 대상의 데이터를 다른 대상의 데이터 값 배열을 가져와서 수정
+data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> value <값>
+- 대상의 데이터 수정
+
+<방식>
+insert <index>: 대상 NBT 데이터의 <index> 자리에 추가한다
+merge: 대상 NBT 데이터에 병합한다.  
+prepend: 대상 NBT 데이터의 가장 앞에 저장한다. # 남은 index 첫번째
+append: 대상 NBT 데이터의 가장 마지막에 저장한다. # 남은 index 마지막
+set: 대상의 NBT 값을 지정한다
 
 
 
