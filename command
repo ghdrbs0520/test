@@ -55,7 +55,7 @@ execute as @a at @s anchored eyes positioned ^ ^ ^1.0 if entity @e[type=armor_st
 /function test:summon_npc {tag:"",name:"",data:""}
 
 $summon ~ ~ ~ interaction {Tags:["$(tag)"],}
-$summon ~ ~ ~ manequin {Tags:["$(tag)_dummy",],Custom_Name:["$(name)"],profile:["$(data)"]}
+$summon ~ ~ ~ mannequin {Tags:["$(tag)_dummy"],CustomName:{$(name)},profile:"$(data)"}
 
 
 data get <block|entity|storage> <대상> [대상 NBT경로] [규모]
