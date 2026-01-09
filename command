@@ -1,17 +1,17 @@
 # 벽통과
-/execute as @e[tag=엔티티] ~~~~~~~ # 대충 플레이어 바라봄
-tp @e[tag=엔티티] ~ ~ ~ ~ ~0.00001 # 바라보는 방향으로 이동
-execute as @e[tag=엔티티] if entity @p run "/function test:test" # 이벤트 발생
+/execute as @e[tag=엔티티] ~~~~~~~   # 대충 플레이어 바라봄
+tp @e[tag=엔티티] ~ ~ ~ ~ ~0.00001   # 바라보는 방향으로 이동
+execute as @e[tag=엔티티] if entity @p run "/function test:test"   # 이벤트 발생
 
 # 트랩
-execute as @p[x=1,y=10,z=1,dx=5,dy=10,dz=5] run "/function test:test" # 이벤트 발생
-execute as @e[tag=엔티티] if entity @p[distance=2.5] run "/function test:test" # 이벤트 발생
+execute as @p[x=1,y=10,z=1,dx=5,dy=10,dz=5] run "/function test:test"   # 이벤트 발생
+execute as @e[tag=엔티티] if entity @p[distance=2.5] run "/function test:test"   # 이벤트 발생
 
 ㄴ /summon ~~~~~~~~~~~~~
    /playsound ~~~~~~~~~~
-   /summon lightningbalt?9 ~ ~ ~ "Silent:1b" # 소리없는 번개 가능?
+   /summon lightningbalt?9 ~ ~ ~ "Silent:1b"   # 소리없는 번개 가능?
 
-# 시선 트리거
+   # 시선 트리거
 1. 데이터 더미 소환
 /execute at 플레이어 run summon 좌표
 2. 시선 좌표 복사
@@ -50,12 +50,41 @@ execute as @a at @s anchored eyes positioned ^ ^ ^1.0 if entity @e[type=armor_st
 2) 무적
 3) 
 
+
+
+1. 지역내 모든 npc 소환후 데이터팩 활성화
+2. 반복명령어로 인식 후 명령어 실행
+3. 지역 비활성화시 명령어 실행후 데이터팩 비활성화
+
+
 엔티티 생성(데이터 부여) > 인터렉션 생성 > 데이터 저장 > 상호작용 > 명령어 실행 > 데이터 기반 실행
 
 /function test:summon_npc {tag:"",name:"",data:""}
 
 $summon ~ ~ ~ interaction {Tags:["$(tag)"],}
 $summon ~ ~ ~ mannequin {Tags:["$(tag)_dummy"],CustomName:{$(name)},profile:"$(data)"}
+
+- 반복실행 함수
+execute if entity @e[tag=test] as @e[tag=test] run function test:npc_test
+
+=
+
+대충 조건부 실행 명령어
+execute on attacker ~~~~~
+
+1. 반복 대화 출력   # 랜덤 사용해서 변수 출력도 가능
+2. 조건 충족시 대화창 출력   # 조건 : 필수 조건 충족, 대화 확인 여부, 
+3. 조건 충족시 이벤트 대화창 출력   # 조건 : 대화 확인 여부, 조건부 충족 여부
+4. 
+
+조건 :
+# 대화 시전시 데이터값 더미값 넣기 # if 0.1.. + set 0
+
+- 확인 여부 true / false
+- 레벨 제한 1~100
+- 아이템 수량 1~64
+- 명령어 실행 여부 on / off
+- 엔티티 살해 수치 1~1000
 
 
 data get <block|entity|storage> <대상> [대상 NBT경로] [규모]
@@ -68,7 +97,7 @@ data remove <block|entity|storage> <대상> <대상 NBT경로>
 
 data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> from <block|entity|storage> <새 블록 좌표|새 개체|새 스토리지> [새 NBT경로]
 - 대상의 데이터를 다른 대상의 데이터 값을 가져와서 수정
-data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> string <block|entity|storage> <새 블록 좌표|새 개체|새 스토리지> [새 NBT경로] [start] [end] # [start]이상 [end]미만
+data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> string <block|entity|storage> <새 블록 좌표|새 개체|새 스토리지> [새 NBT경로] [start] [end]   # [start]이상 [end]미만
 - 대상의 데이터를 다른 대상의 데이터 값 배열을 가져와서 수정
 data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> value <값>
 - 대상의 데이터 수정
@@ -76,9 +105,10 @@ data modify <block|entity|storage> <대상> <대상 NBT경로> <방식> value <�
 <방식>
 insert <index>: 대상 NBT 데이터의 <index> 자리에 추가한다
 merge: 대상 NBT 데이터에 병합한다.  
-prepend: 대상 NBT 데이터의 가장 앞에 저장한다. # 남은 index 첫번째
-append: 대상 NBT 데이터의 가장 마지막에 저장한다. # 남은 index 마지막
+prepend: 대상 NBT 데이터의 가장 앞에 저장한다.   # 남은 index 첫번째
+append: 대상 NBT 데이터의 가장 마지막에 저장한다.   # 남은 index 마지막
 set: 대상의 NBT 값을 지정한다
+
 
 
 
