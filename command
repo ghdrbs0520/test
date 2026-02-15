@@ -112,6 +112,59 @@ set: 대상의 NBT 값을 지정한다
 
 
 
+함수에 딜레이 넣기
+
+1. 특정 범위 안에 대상에게 함수를 실행시킴
+2. 본인에게 태그 부여 및 예약함수를 실행시킴 
+3. 예약함수에서 태그를 가진 엔티티에게 이벤트를 발생시킴
+4. 
+
+문제점
+- 다수의 동일한 사람이 함수를 실행할 경우 자신이 부여하지 않은 대상에게도 이벤트가 발생하는 경우가 생김   # 예) 스킬을 동시에 발동시 한명만 맞춰도 두명분의 데미지가 들어감
+- 대상을 지정하는 방법을 변수로 지정하면 예약함수 사용시 사용이 불가능함   # 예약함수 명령어에 변수 사용 불가
+- 함수를 시전자마다 개별로 생성하면 함수가 많아질수록 새로운 시전자를 생성할수 없음   # 함수 생성시 복붙을 못하고 지정 범위가 증가함 (Ctrl + Shift + H 쓰면 될듯?)
+
+
+(world 폴더)
+└── datapacks
+    |
+    |── skillpack   # 스킬 비활성화 할 수 있도록 따로 생성
+    |   ├── pack.mcmeta
+    |   └── data
+    |       ├── minecraft
+    |       │   └── tags
+    |       │       └── functions
+    |       │           ├── load.json # 접속시 실행 (콘솔실행 / 유저마다 실행)
+    |       │           └── tick.json # 반복 실행 (콘솔 실행)
+    |       └── namespace # 직업명 또는 사용 권한명
+    |           └── function
+    |              |── test # 시전 스킬 이름
+    |              |   └── use.mcfunction # 실행 함수
+    |              |── sword
+    |              |   └── use.mcfunction
+    |              |── dash
+    |              |   └── use.mcfunction
+    |              └── skill
+    |                  └── use.mcfunction
+    |
+    └── systempack
+        ├── pack.mcmeta
+        └── data
+            ├── minecraft
+            │   └── tags
+            │       └── functions
+            │           ├── load.json
+            │           └── tick.json
+            └── mypack
+                └── function
+                    ├── init.mcfunction
+                    ├── main.mcfunction
+                    └── utils
+                        └── give_item.mcfunction
+
+
+
+
 
 2. 스킬
 
