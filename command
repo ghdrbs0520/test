@@ -141,7 +141,7 @@ set: 대상의 NBT 값을 지정한다
 (world 폴더)
 └── datapacks
     |
-    |── skillpack   # 스킬 비활성화 할 수 있도록 따로 생성
+    ├── skillpack   # 스킬 비활성화 할 수 있도록 따로 생성
     |   ├── pack.mcmeta
     |   └── data
     |       ├── minecraft
@@ -155,16 +155,16 @@ set: 대상의 NBT 값을 지정한다
     |       |
     |       └── namespace # 직업명 또는 사용 권한명
     |           └── function
-    |              |── test # 시전 스킬 이름
+    |              ├── test # 시전 스킬 이름
     |              |   └── use.mcfunction # 실행 함수
-    |              |── sword
+    |              ├── sword
     |              |   └── use.mcfunction
-    |              |── dash
+    |              ├── dash
     |              |   └── use.mcfunction
     |              └── skill
     |                  |   # 스킬 복붙
-    |                  |── use.mcfunction
-    |                  |── use.mcfunction
+    |                  ├── use.mcfunction
+    |                  ├── use.mcfunction
     |                  └── use.mcfunction
     |
     └── systempack   # 구축된 시스템별로 따로 데이터팩 생성
@@ -181,6 +181,38 @@ set: 대상의 NBT 값을 지정한다
                     ├── main.mcfunction
                     └── utils
                         └── give_item.mcfunction
+
+
+
+
+── namespace   # 직업명 또는 사용 권한명
+   └── function   # 함수파일
+       ├── test # 시전 스킬 이름 (/execute as @s run function namespace:test/use (text:phg0520))
+       |   └── use.mcfunction # 실행 함수
+       ├── sword
+       |   ├── use.mcfunction
+       |   ├── use_prog0205.mcfunction
+       |   ├── use_phg0520.mcfunction
+       |   ├── use_stive.mcfunction
+       |   ├── use_sjssnrn.mcfunction
+       |   └── use_test.mcfunction
+       └── dash
+           ├── use.mcfunction
+           ├── use.mcfunction
+           ├── use.mcfunction
+           ├── use.mcfunction
+           └── use.mcfunction
+
+1. 닉네임을 변수로 넣은 함수파일을 조건부로 실행 (공통)
+2. 대상별로 파일을 생성 (수동으로 복사)
+3. 변수값만 전체 수정 
+4. 
+5.
+6. 
+
+
+
+
 
 
 
