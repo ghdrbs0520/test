@@ -386,43 +386,136 @@ item_name={"bold":true,"color":"black","text":"아이템이름"},
 
 - 나무 동전
 설명 : 희귀한 나무를 화려하게 다듬어서 만들었다. (숲) 마을에서 사용이 가능하다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"나무 동전"},lore=[{"bold":false,"color":"white","text":"희귀한 나무를 화려하게 다듬어서 만들었다."}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"나무 동전"},lore=[{"bold":false,"color":"white","text":"희귀한 나무를 화려하게 다듬어서 만들었다."}]] 1
 
 - 조개 껍데기
 설명 : 매우 아름답게 생긴 조개 껍데기이다. (바다) 마을에서 사용이 가능하다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"조개 껍데기"},lore=[{"bold":false,"color":"white","text":"매우 아름답게 생긴 조개 껍데기이다."}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"조개 껍데기"},lore=[{"bold":false,"color":"white","text":"매우 아름답게 생긴 조개 껍데기이다."}]] 1
 
 - 녹색 보석
 설명 : 푸른빛이 영롱하게 빛나는 보석이다. (대저택) 마을에서 사용이 가능하다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"녹색 보석"},lore=[{"bold":false,"color":"white","text":"푸른빛이 영롱하게 빛나는 보석이다."}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"녹색 보석"},lore=[{"bold":false,"color":"white","text":"푸른빛이 영롱하게 빛나는 보석이다."}]] 1
 
 - 만년설
 설명 : 오랜시간 얼어있던 얼음 조각이다. 매우 단단하고 쉽게 녹지 않는다. (설원) 마을에서 사용이 가능하다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"만년설"},lore=[{"bold":false,"color":"white","text":"오랜시간 얼어있던 얼음 조각이다. 매우 단단하고 쉽게 녹지 않는다."}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"만년설"},lore=[{"bold":false,"color":"white","text":"오랜시간 얼어있던 얼음 조각이다. 매우 단단하고 쉽게 녹지 않는다."}]] 1
 
 - 고대 잔해
 설명 : 옛 문명의 유산이다. 매우 단단하며 희귀하다. (지옥) 마을에서 사용이 가능하다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"고대 잔해"},lore=[{"bold":false,"color":"white","text":"옛 문명의 유산이다. 매우 단단하며 희귀하다."}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"색","text":"고대 잔해"},lore=[{"bold":false,"color":"white","text":"옛 문명의 유산이다. 매우 단단하며 희귀하다."}]] 1
 
 - 빛나는 크리스탈
 설명 : 광산의 깊은 곳에서 희귀하게 찾을 수 있는 광석이다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"color":"red","text":"빛"},{"color":"gold","text":"나"},{"color":"yellow","text":"는"},{"color":"white","text":" 크"},{"color":"green","text":"리"},{"color":"aqua","text":"스"},{"color":"light_purple","text":"탈"},lore=[{"bold":false,"color":"white","text":"광산의 깊은 곳에서 희귀하게 찾을 수 있는 광석이다."}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"color":"red","text":"빛"},{"color":"gold","text":"나"},{"color":"yellow","text":"는"},{"color":"white","text":" 크"},{"color":"green","text":"리"},{"color":"aqua","text":"스"},{"color":"light_purple","text":"탈"},lore=[{"bold":false,"color":"white","text":"광산의 깊은 곳에서 희귀하게 찾을 수 있는 광석이다."}]] 1
 
 - 
 설명 : 
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"dark_gray","text":"["},{"bold":true,"color":"gold","text":" 재화 "},{"bold":true,"color":"dark_gray","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
 
 
 
 4. 소모품
 숲,바다,사막,동굴,늪지대,저택,설원,지옥,엔더
 
--
+- 체력 회복 물약 (50hp)
 설명 : 
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
 
+- 체력 회복 물약 (200hp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
 
+- 체력 회복 물약 (500hp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
 
+- 체력 회복 물약 (1000hp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 체력 회복 물약 (5000hp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 육포
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 엿
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 사과
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 빵
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 기력 회복 물약 (1sp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 기력 회복 물약 (3sp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 기력 회복 물약 (5sp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 기력 회복 물약 (10sp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 기력 회복 물약 (15sp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 기력 회복 물약 (20sp)
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
+- 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"black","text":"["},{"bold":true,"color":"black","text":" 소모품 "},{"bold":true,"color":"black","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
 
 5. 재료
 숲,바다,사막,동굴,늪지대,저택,설원,지옥,엔더
@@ -444,60 +537,78 @@ item_name={"bold":true,"color":"black","text":"아이템이름"},
 
 - 오염된 나무 조각
 설명 : 숲속에 살고있는 어느 나무 괴물의 몸에서 떨어져나온 조각이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"오염된 나무 조각"}],lore=[{"bold":false,"color":"white","text":"숲속에 살고있는 어느 나무 괴물의 몸에서 떨어져나온 조각이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"오염된 나무 조각"}],lore=[{"bold":false,"color":"white","text":"숲속에 살고있는 어느 나무 괴물의 몸에서 떨어져나온 조각이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 바다의 정수
 설명 : 심해의 오래된 수호자의 심장이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"바다의 정수"},lore=[{"bold":false,"color":"white","text":"심해의 오래된 수호자의 심장이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"바다의 정수"},lore=[{"bold":false,"color":"white","text":"심해의 오래된 수호자의 심장이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 지배자의 부러진 이
 설명 : 사막의 지배자의 이빨 조각이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"지배자의 부러진 이"},lore=[{"bold":false,"color":"white","text":"사막의 지배자의 이빨 조각이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"지배자의 부러진 이"},lore=[{"bold":false,"color":"white","text":"사막의 지배자의 이빨 조각이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 힘이 깃든 공명의 광석
 설명 : 주변의 소리와 공명하는 특이한 광석이다. 어딘가에서 사용할 수 있을 것 같다. 
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"힘이 깃든 공명의 광석"},lore=[{"bold":false,"color":"white","text":"주변의 소리와 공명하는 특이한 광석이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"힘이 깃든 공명의 광석"},lore=[{"bold":false,"color":"white","text":"주변의 소리와 공명하는 특이한 광석이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 농축된 산성 액체
 설명 : 늪지대에 사는 거대한 슬라임의 분비물이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"농축된 산성 액체"},lore=[{"bold":false,"color":"white","text":"늪지대에 사는 거대한 슬라임의 분비물이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"농축된 산성 액체"},lore=[{"bold":false,"color":"white","text":"늪지대에 사는 거대한 슬라임의 분비물이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 저주의 토템
 설명 : 오랜기간 살아온 위대한 마법사의 저주받은 토템이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"저주받은 토템"},lore=[{"bold":false,"color":"white","text":"오랜기간 살아온 위대한 마법사의 저주받은 토템이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"저주받은 토템"},lore=[{"bold":false,"color":"white","text":"오랜기간 살아온 위대한 마법사의 저주받은 토템이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 설산의 왕의 발톱
 설명 : 설산을 지배하는 거대한 늑대의 발톱이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"설산의 왕의 발톱"},lore=[{"bold":false,"color":"white","text":"설산을 지배하는 거대한 늑대의 발톱이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"설산의 왕의 발톱"},lore=[{"bold":false,"color":"white","text":"설산을 지배하는 거대한 늑대의 발톱이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 망령의 산물
 설명 : 오래된 망령이 남기고간 물질이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"망령의 산물"},lore=[{"bold":false,"color":"white","text":"오래된 망령이 남기고간 물질이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"망령의 산물"},lore=[{"bold":false,"color":"white","text":"오래된 망령이 남기고간 물질이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 드래곤의 알
 설명 : 하늘의 끝에 존재하는 엔더 드래곤이 품고있던 알이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"드래곤의 알"},lore=[{"bold":false,"color":"white","text":"하늘의 끝에 존재하는 엔더 드래곤이 품고있던 알이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"드래곤의 알"},lore=[{"bold":false,"color":"white","text":"하늘의 끝에 존재하는 엔더 드래곤이 품고있던 알이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 - 드래곤의 숨결
 설명 : 하늘을 지배하던 존재의 마지막 숨결이다. 어딘가에서 사용할 수 있을 것 같다.
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"드래곤의 숨결"},lore=[{"bold":false,"color":"white","text":"하늘을 지배하던 존재의 마지막 숨결이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"색","text":"드래곤의 숨결"},lore=[{"bold":false,"color":"white","text":"하늘을 지배하던 존재의 마지막 숨결이다."},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 
 - 
 설명 : 
-명령어 : /execute as @s run give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 재료 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"},{"bold":true,"color":"gray","text":"어딘가에서 사용할 수 있을 것 같다."},{"bold":true,"color":"dark_red","text":"(보스아이템)"}]] 1
 
 
 
 
 
 6. 퀘스트아이템
+
 - 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 퀘스트 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
 - 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 퀘스트 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
 - 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 퀘스트 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
 - 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 퀘스트 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
 - 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 퀘스트 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
+
 - 
+설명 : 
+명령어 : /give @s 아이템[custom_name=[{"bold":true,"color":"gold","text":"["},{"bold":true,"color":"white","text":" 퀘스트 ","shadow_color":-14869215},{"bold":true,"color":"gold","text":"]"},{"bold":true,"color":"black","text":"이름"},lore=[{"bold":false,"color":"white","text":"내용"}]] 1
 
 7. 
 
